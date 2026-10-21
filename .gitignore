@@ -1,0 +1,42 @@
+# Build output; retain the directory contract.
+/build/*
+!/build/README.md
+!/build/frontend/
+!/build/cargo/
+!/build/staging/
+!/build/logs/
+/build/frontend/*
+/build/cargo/*
+/build/staging/*
+/build/logs/*
+!/build/frontend/.gitkeep
+!/build/cargo/.gitkeep
+!/build/staging/.gitkeep
+!/build/logs/.gitkeep
+
+# Release binaries remain local; retain slot documentation.
+/release/current/*
+!/release/current/README.md
+/release/archive/*
+!/release/archive/README.md
+/release/preview/*
+!/release/preview/README.md
+
+# Dependency and fallback build directories.
+**/node_modules/
+**/target/
+**/dist/
+/src-tauri/gen/
+
+# Local editor/OS and environment data.
+.DS_Store
+Thumbs.db
+.vs/
+.idea/
+*.local
+*.log
+.env
+.env.*
+!.env.example
+
+# Dependency lockfiles and version records must remain tracked.
