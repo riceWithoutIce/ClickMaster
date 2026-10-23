@@ -11,6 +11,7 @@
 | [Verifier 验收](verifier.md) | 独立检查、问题分级、修复复审与停止条件 |
 | [收尾与交付](closure.md) | 证据状态、目标实测、版本交付与记录 |
 | [文件与文档脱敏](sanitization.md) | 本机路径、敏感内容、日志截图及交付检查 |
+| [开发与测试产物落点](generated-data.md) | 临时文件、依赖缓存、测试及验收输出限定在当前项目内 |
 | [任务契约模板](templates/task-contract.md) | 开始前统一目标与验收边界 |
 | [Coder 交接模板](templates/coder-handoff.md) | 提交稳定快照和自测证据 |
 | [Verifier 报告模板](templates/verifier-report.md) | 一次性汇总结论和 findings |

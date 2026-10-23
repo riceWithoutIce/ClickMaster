@@ -1,0 +1,24 @@
+{
+  "startedAt": "2026-10-23T07:20:53.7032173Z",
+  "status": "completed",
+  "manifestSha256": "ED804C298D45AA08F477BCDB52C2D94BCC641E19DFC88587472EE2CFDD9ADC0D",
+  "historySha256Before": "AD98A6CAC0B53D5D7D2E4A15C5DB8C8E94AEA01A689DCA7A752BAAECEC6EF469",
+  "candidates": 32532,
+  "processed": 32532,
+  "deleted": 32532,
+  "deletedBytes": 4347965512,
+  "missing": 0,
+  "skipped": 0,
+  "emptyDirectoriesRemoved": 6942,
+  "emptyDirectorySkips": 0,
+  "activeExecutableRoots": [
+    "build/staging/TASK-013-UI-SKETCH-ALIGN"
+  ],
+  "retainedLink": "build/verification/TASK-003/verifier/source/node_modules",
+  "remainingCandidates": 0,
+  "protectedSourceChecks": 84,
+  "retainedEvidenceChecks": 2491,
+  "latestArtifactChecks": 2,
+  "verificationErrors": [],
+  "finishedAt": "2026-10-23T07:23:17.5013532Z"
+}

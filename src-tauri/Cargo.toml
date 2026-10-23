@@ -1,0 +1,28 @@
+[package]
+name = "clickmaster"
+version = "0.1.0-rc.9"
+description = "ClickMaster portable desktop shell"
+edition = "2021"
+rust-version = "1.90"
+
+[lib]
+name = "clickmaster_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "=2.7.3", features = [] }
+
+[dependencies]
+tauri = { version = "=2.12.4", features = ["tray-icon", "image-png"] }
+serde = { version = "=1.0.229", features = ["derive"] }
+serde_json = "=1.0.154"
+webview2-com = "=0.39.1"
+windows-core = "=0.62.2"
+windows-sys = { version = "0.61", features = ["Win32_Storage_FileSystem", "Win32_UI_WindowsAndMessaging", "Win32_System_Threading", "Win32_System_ProcessStatus", "Win32_Graphics_Dwm", "Win32_Graphics_Gdi", "Win32_UI_HiDpi", "Win32_System_LibraryLoader", "Win32_UI_Input_KeyboardAndMouse", "Win32_System_Pipes", "Win32_System_IO", "Win32_System_Console", "Win32_System_Diagnostics_ToolHelp", "Win32_Security", "Win32_Security_Authorization", "Win32_Security_Cryptography"] }
+
+[profile.release]
+strip = true
+debug = 0
+incremental = false
+lto = "thin"
+codegen-units = 1

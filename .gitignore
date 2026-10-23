@@ -40,3 +40,5 @@ Thumbs.db
 !.env.example
 
 # Dependency lockfiles and version records must remain tracked.
+**/data/
+*.pdb

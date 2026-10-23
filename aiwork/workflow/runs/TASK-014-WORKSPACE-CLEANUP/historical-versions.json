@@ -1,0 +1,528 @@
+{
+  "preparedAt": "2026-10-23T07:04:29.526Z",
+  "removalExecuted": true,
+  "versions": [
+    {
+      "directory": "build/staging/TASK-006-UI-CLEANUP",
+      "version": "0.1.0-rc.1",
+      "published": false,
+      "status": "removed-2026-10-23",
+      "artifacts": [
+        {
+          "path": "build/staging/TASK-006-UI-CLEANUP/ClickMaster-0.1.0-rc.1-windows-x64.zip",
+          "bytes": 2952449,
+          "sha256": "27A8141BA4864F8832E12157D7AC6F5097DBFC89069EDA584B4D2E8F05EBE46A",
+          "action": "delete",
+          "reason": "obsolete-candidate-after-version-record"
+        },
+        {
+          "path": "build/staging/TASK-006-UI-CLEANUP/ClickMaster.exe",
+          "bytes": 9454080,
+          "sha256": "369E6DC757757FB5D001083D5834699591220A2B0A23DA576E0D1C1BF2323F6D",
+          "action": "delete",
+          "reason": "obsolete-candidate-after-version-record"
+        }
+      ],
+      "declaredChecks": [
+        {
+          "kind": "exe",
+          "declaredPath": "build/verification/TASK-006-UI-CLEANUP/coder/final/ClickMaster.exe",
+          "declaredSha256": "369E6DC757757FB5D001083D5834699591220A2B0A23DA576E0D1C1BF2323F6D",
+          "matches": true
+        },
+        {
+          "kind": "zip",
+          "declaredPath": "build/staging/TASK-006-UI-CLEANUP/ClickMaster-0.1.0-rc.1-windows-x64.zip",
+          "declaredSha256": "27A8141BA4864F8832E12157D7AC6F5097DBFC89069EDA584B4D2E8F05EBE46A",
+          "matches": true
+        }
+      ],
+      "acceptanceRecords": [
+        "aiwork/workflow/runs/TASK-006-UI-CLEANUP/acceptance.md",
+        "aiwork/workflow/runs/TASK-006-UI-CLEANUP/coder-handoff.md",
+        "aiwork/workflow/runs/TASK-006-UI-CLEANUP/human-test.md",
+        "aiwork/workflow/runs/TASK-006-UI-CLEANUP/rc2-coder-handoff.md",
+        "aiwork/workflow/runs/TASK-006-UI-CLEANUP/rc2-human-test.md",
+        "aiwork/workflow/runs/TASK-006-UI-CLEANUP/rc2-verifier-plan.md",
+        "aiwork/workflow/runs/TASK-006-UI-CLEANUP/rc2-verifier-report.md",
+        "aiwork/workflow/runs/TASK-006-UI-CLEANUP/verifier-report.md"
+      ],
+      "sourceRecord": "build/staging/TASK-006-UI-CLEANUP/source.json",
+      "sourceRecordSha256": "A0348E483A51A1DF78D5BE03DA3012F0DA54D1905208FD7D34B23809AF2A2547",
+      "sourceMetadata": {
+        "id": "TASK-006-UI-CLEANUP-rc.1-coder-final",
+        "version": "0.1.0-rc.1",
+        "headReferenceOnly": "d3d8f58ba8490212a16f33faecb4b5533d79bd5d",
+        "dirtySnapshot": true,
+        "sourceFileCount": 69,
+        "sourceManifest": "build/verification/TASK-006-UI-CLEANUP/coder/source-manifest.json",
+        "sourceManifestSha256": "B9198A948057C638206A536FFD4DF5C4B0C141962CD9FEC293ED7F650E9FEEA6",
+        "signature": "NotSigned",
+        "release": false
+      },
+      "humanAcceptanceSummary": "人工体验发现循环不可用，后续 rc.2 处理；不记为首版正式验收通过",
+      "humanAcceptanceSource": "aiwork/devlog.md"
+    },
+    {
+      "directory": "build/staging/TASK-006-UI-CLEANUP-rc2",
+      "version": "0.1.0-rc.2",
+      "published": false,
+      "status": "removed-2026-10-23",
+      "artifacts": [
+        {
+          "path": "build/staging/TASK-006-UI-CLEANUP-rc2/ClickMaster-0.1.0-rc.2-windows-x64/ClickMaster.exe",
+          "bytes": 9457664,
+          "sha256": "F1C4789F06AF420CCE2633A51B9BA49B795B48FE2F6B2B8144C9BE1A27FE5A38",
+          "action": "delete",
+          "reason": "obsolete-candidate-after-version-record"
+        },
+        {
+          "path": "build/staging/TASK-006-UI-CLEANUP-rc2/ClickMaster-0.1.0-rc.2-windows-x64.zip",
+          "bytes": 2946202,
+          "sha256": "6B3E4ACCF658CFF5EEDCCB21D4677A7CFB3BC088FD9B0255F58935777D73DAD4",
+          "action": "delete",
+          "reason": "obsolete-candidate-after-version-record"
+        }
+      ],
+      "declaredChecks": [
+        {
+          "kind": "exe",
+          "declaredPath": "build/verification/TASK-006-UI-CLEANUP/rc2/coder/final/ClickMaster.exe",
+          "declaredSha256": "F1C4789F06AF420CCE2633A51B9BA49B795B48FE2F6B2B8144C9BE1A27FE5A38",
+          "matches": true
+        },
+        {
+          "kind": "zip",
+          "declaredPath": "build/staging/TASK-006-UI-CLEANUP-rc2/ClickMaster-0.1.0-rc.2-windows-x64.zip",
+          "declaredSha256": "6B3E4ACCF658CFF5EEDCCB21D4677A7CFB3BC088FD9B0255F58935777D73DAD4",
+          "matches": true
+        }
+      ],
+      "acceptanceRecords": [
+        "aiwork/workflow/runs/TASK-006-UI-CLEANUP/acceptance.md",
+        "aiwork/workflow/runs/TASK-006-UI-CLEANUP/coder-handoff.md",
+        "aiwork/workflow/runs/TASK-006-UI-CLEANUP/human-test.md",
+        "aiwork/workflow/runs/TASK-006-UI-CLEANUP/rc2-coder-handoff.md",
+        "aiwork/workflow/runs/TASK-006-UI-CLEANUP/rc2-human-test.md",
+        "aiwork/workflow/runs/TASK-006-UI-CLEANUP/rc2-verifier-plan.md",
+        "aiwork/workflow/runs/TASK-006-UI-CLEANUP/rc2-verifier-report.md",
+        "aiwork/workflow/runs/TASK-006-UI-CLEANUP/verifier-report.md"
+      ],
+      "sourceRecord": "build/staging/TASK-006-UI-CLEANUP-rc2/source.json",
+      "sourceRecordSha256": "468510B7B8E3C5FA667037473601D7E0DAE03AD59C30D41823B4F4533C8EA489",
+      "sourceMetadata": {
+        "id": "TASK-006-UI-CLEANUP-rc.2-coder-final",
+        "version": "0.1.0-rc.2",
+        "headReferenceOnly": "d3d8f58ba8490212a16f33faecb4b5533d79bd5d",
+        "dirtySnapshot": true,
+        "sourceFileCount": 69,
+        "sourceManifest": "build/verification/TASK-006-UI-CLEANUP/rc2/coder/source-manifest.json",
+        "sourceManifestSha256": "1E13433B08DD3509754B5772822B8F1FF8A22812D7986936F98F20B157B94032",
+        "signature": "NotSigned",
+        "release": false
+      },
+      "humanAcceptanceSummary": "用户确认可循环",
+      "humanAcceptanceSource": "aiwork/devlog.md"
+    },
+    {
+      "directory": "build/staging/TASK-007-IPC-INTERVAL",
+      "version": "0.1.0-rc.3",
+      "published": false,
+      "status": "removed-2026-10-23",
+      "artifacts": [
+        {
+          "path": "build/staging/TASK-007-IPC-INTERVAL/ClickMaster-0.1.0-rc.3-windows-x64/ClickMaster.exe",
+          "bytes": 9456640,
+          "sha256": "71C5B6806F590460DCA8271D96000681BB9294B2EAA2BBC645C0688918E36AC3",
+          "action": "delete",
+          "reason": "obsolete-candidate-after-version-record"
+        },
+        {
+          "path": "build/staging/TASK-007-IPC-INTERVAL/ClickMaster-0.1.0-rc.3-windows-x64.zip",
+          "bytes": 2953942,
+          "sha256": "AC1AF361AD80323326B0C6A590610758DA48D7CD0DDFE36A1F5DAEEC2642A5B8",
+          "action": "delete",
+          "reason": "obsolete-candidate-after-version-record"
+        }
+      ],
+      "declaredChecks": [
+        {
+          "kind": "exe",
+          "declaredPath": "build/verification/TASK-007-IPC-INTERVAL/coder/final/ClickMaster.exe",
+          "declaredSha256": "71C5B6806F590460DCA8271D96000681BB9294B2EAA2BBC645C0688918E36AC3",
+          "matches": true
+        },
+        {
+          "kind": "zip",
+          "declaredPath": "build/staging/TASK-007-IPC-INTERVAL/ClickMaster-0.1.0-rc.3-windows-x64.zip",
+          "declaredSha256": "AC1AF361AD80323326B0C6A590610758DA48D7CD0DDFE36A1F5DAEEC2642A5B8",
+          "matches": true
+        }
+      ],
+      "acceptanceRecords": [
+        "aiwork/workflow/runs/TASK-007-IPC-INTERVAL/coder-handoff.md",
+        "aiwork/workflow/runs/TASK-007-IPC-INTERVAL/human-test.md",
+        "aiwork/workflow/runs/TASK-007-IPC-INTERVAL/verifier-report.md"
+      ],
+      "sourceRecord": "build/staging/TASK-007-IPC-INTERVAL/source.json",
+      "sourceRecordSha256": "9A7D2901F98029A993352C50D85CF9672D534E484DBEE4F2D19D190107CD973A",
+      "sourceMetadata": {
+        "id": "TASK-007-IPC-INTERVAL-rc.3-coder-final",
+        "version": "0.1.0-rc.3",
+        "headReferenceOnly": "d3d8f58ba8490212a16f33faecb4b5533d79bd5d",
+        "dirtySnapshot": true,
+        "sourceFileCount": 69,
+        "sourceManifest": "build/verification/TASK-007-IPC-INTERVAL/coder/source-manifest.json",
+        "sourceManifestSha256": "3ED1B7AA576DAC85E49FA4141FE4955C7BD84245416785E71DE56E65929C0FB7",
+        "signature": "NotSigned",
+        "release": false
+      },
+      "humanAcceptanceSummary": "用户确认间隔放宽测试通过",
+      "humanAcceptanceSource": "aiwork/devlog.md"
+    },
+    {
+      "directory": "build/staging/TASK-008-IPC-EFFICIENCY",
+      "version": "0.1.0-rc.4",
+      "published": false,
+      "status": "removed-2026-10-23",
+      "artifacts": [
+        {
+          "path": "build/staging/TASK-008-IPC-EFFICIENCY/ClickMaster-0.1.0-rc.4-windows-x64/ClickMaster.exe",
+          "bytes": 9464320,
+          "sha256": "0F11C14A7BF0C4DC1AF6D0DC62A5BECF105775F9651D037268EF0AAED6C7F638",
+          "action": "delete",
+          "reason": "obsolete-candidate-after-version-record"
+        },
+        {
+          "path": "build/staging/TASK-008-IPC-EFFICIENCY/ClickMaster-0.1.0-rc.4-windows-x64.zip",
+          "bytes": 2954463,
+          "sha256": "366B7D35CEE1A7D9B18B2BC8349882D4C5A0BA02D89EDC0A199A154975D7F7BB",
+          "action": "delete",
+          "reason": "obsolete-candidate-after-version-record"
+        }
+      ],
+      "declaredChecks": [
+        {
+          "kind": "exe",
+          "declaredPath": "build/verification/TASK-008-IPC-EFFICIENCY/coder/final/ClickMaster.exe",
+          "declaredSha256": "0F11C14A7BF0C4DC1AF6D0DC62A5BECF105775F9651D037268EF0AAED6C7F638",
+          "matches": true
+        },
+        {
+          "kind": "zip",
+          "declaredPath": "build/staging/TASK-008-IPC-EFFICIENCY/ClickMaster-0.1.0-rc.4-windows-x64.zip",
+          "declaredSha256": "366B7D35CEE1A7D9B18B2BC8349882D4C5A0BA02D89EDC0A199A154975D7F7BB",
+          "matches": true
+        }
+      ],
+      "acceptanceRecords": [
+        "aiwork/workflow/runs/TASK-008-IPC-EFFICIENCY/acceptance.md",
+        "aiwork/workflow/runs/TASK-008-IPC-EFFICIENCY/coder-handoff.md",
+        "aiwork/workflow/runs/TASK-008-IPC-EFFICIENCY/human-test.md",
+        "aiwork/workflow/runs/TASK-008-IPC-EFFICIENCY/verifier-report.md"
+      ],
+      "sourceRecord": "build/staging/TASK-008-IPC-EFFICIENCY/source.json",
+      "sourceRecordSha256": "2CE51F3B1D8DE321969B03443EE71F8F3A3C4BEF1455F0DFB0F3CE98ADDF2FA4",
+      "sourceMetadata": {
+        "id": "TASK-008-IPC-EFFICIENCY-rc.4-coder-final",
+        "version": "0.1.0-rc.4",
+        "headReferenceOnly": "d3d8f58ba8490212a16f33faecb4b5533d79bd5d",
+        "dirtySnapshot": true,
+        "sourceFileCount": 69,
+        "sourceManifest": "build/verification/TASK-008-IPC-EFFICIENCY/coder/source-manifest.json",
+        "sourceManifestSha256": "59BD412C7CF93A919E675720750AB661032FB682CC62B59818145BB941C3FEBD",
+        "signature": "NotSigned",
+        "release": false
+      },
+      "humanAcceptanceSummary": "用户确认专用 IPC 前台交互通过，性能问题仍存在",
+      "humanAcceptanceSource": "aiwork/devlog.md"
+    },
+    {
+      "directory": "build/staging/TASK-009-PERFORMANCE-LOGS",
+      "version": "0.1.0-rc.5",
+      "published": false,
+      "status": "removed-2026-10-23",
+      "artifacts": [
+        {
+          "path": "build/staging/TASK-009-PERFORMANCE-LOGS/ClickMaster-0.1.0-rc.5-windows-x64.zip",
+          "bytes": 3031308,
+          "sha256": "6B8B5397DC401028EC51E043F7CDCA90DF8BAE85BB67DD33E455145C43B11104",
+          "action": "delete",
+          "reason": "obsolete-candidate-after-version-record"
+        },
+        {
+          "path": "build/staging/TASK-009-PERFORMANCE-LOGS/ClickMaster.exe",
+          "bytes": 9674240,
+          "sha256": "5CDC17F605E27A096E9667DEF08C8CA4C13630A065F069AE0CC4587ADD8AEF93",
+          "action": "delete",
+          "reason": "obsolete-candidate-after-version-record"
+        }
+      ],
+      "declaredChecks": [
+        {
+          "kind": "exe",
+          "declaredPath": "build/verification/TASK-009-PERFORMANCE-LOGS/coder/final/ClickMaster.exe",
+          "declaredSha256": "5CDC17F605E27A096E9667DEF08C8CA4C13630A065F069AE0CC4587ADD8AEF93",
+          "matches": true
+        },
+        {
+          "kind": "zip",
+          "declaredPath": "build/staging/TASK-009-PERFORMANCE-LOGS/ClickMaster-0.1.0-rc.5-windows-x64.zip",
+          "declaredSha256": "6B8B5397DC401028EC51E043F7CDCA90DF8BAE85BB67DD33E455145C43B11104",
+          "matches": true
+        }
+      ],
+      "acceptanceRecords": [
+        "aiwork/workflow/runs/TASK-009-PERFORMANCE-LOGS/acceptance.md",
+        "aiwork/workflow/runs/TASK-009-PERFORMANCE-LOGS/coder-handoff.md",
+        "aiwork/workflow/runs/TASK-009-PERFORMANCE-LOGS/human-test.md",
+        "aiwork/workflow/runs/TASK-009-PERFORMANCE-LOGS/verifier-report.md"
+      ],
+      "sourceRecord": "build/staging/TASK-009-PERFORMANCE-LOGS/source.json",
+      "sourceRecordSha256": "6A3A2C07F7853E115C969A332A794E5EAB15CE57EDEAAA8C7E7105859E2119B4",
+      "sourceMetadata": {
+        "id": "TASK-009-PERFORMANCE-LOGS-rc.5-coder-final",
+        "version": "0.1.0-rc.5",
+        "headReferenceOnly": "d3d8f58ba8490212a16f33faecb4b5533d79bd5d",
+        "dirtySnapshot": true,
+        "sourceFileCount": 71,
+        "sourceManifest": "build/verification/TASK-009-PERFORMANCE-LOGS/coder/source-manifest.json",
+        "sourceManifestSha256": "2423B0DA7062173A6D92E22B63A2F09340886C22545F044FE3958A444F81A551",
+        "signature": "NotSigned",
+        "release": false
+      },
+      "humanAcceptanceSummary": "用户提供实际性能采集日志，工具用于诊断，不记为性能通过",
+      "humanAcceptanceSource": "aiwork/devlog.md"
+    },
+    {
+      "directory": "build/staging/TASK-010-WEBVIEW-METRICS",
+      "version": "0.1.0-rc.6",
+      "published": false,
+      "status": "removed-2026-10-23",
+      "artifacts": [
+        {
+          "path": "build/staging/TASK-010-WEBVIEW-METRICS/ClickMaster-0.1.0-rc.6-windows-x64.zip",
+          "bytes": 3060049,
+          "sha256": "C1C36FD22F344C919FFCF7EDD4B61A2BD4A5B67FF566D741E9A4C092F450E4B2",
+          "action": "delete",
+          "reason": "obsolete-candidate-after-version-record"
+        },
+        {
+          "path": "build/staging/TASK-010-WEBVIEW-METRICS/ClickMaster.exe",
+          "bytes": 9743872,
+          "sha256": "A4A5123111CA05B6D3E7BBAE0943855DAD48C7065E16379D343C805CBDE5B221",
+          "action": "delete",
+          "reason": "obsolete-candidate-after-version-record"
+        }
+      ],
+      "declaredChecks": [
+        {
+          "kind": "exe",
+          "declaredPath": "build/verification/TASK-010-WEBVIEW-METRICS/coder/final/ClickMaster.exe",
+          "declaredSha256": "A4A5123111CA05B6D3E7BBAE0943855DAD48C7065E16379D343C805CBDE5B221",
+          "matches": true
+        },
+        {
+          "kind": "zip",
+          "declaredPath": "build/staging/TASK-010-WEBVIEW-METRICS/ClickMaster-0.1.0-rc.6-windows-x64.zip",
+          "declaredSha256": "C1C36FD22F344C919FFCF7EDD4B61A2BD4A5B67FF566D741E9A4C092F450E4B2",
+          "matches": true
+        }
+      ],
+      "acceptanceRecords": [
+        "aiwork/workflow/runs/TASK-010-WEBVIEW-METRICS/acceptance.md",
+        "aiwork/workflow/runs/TASK-010-WEBVIEW-METRICS/coder-handoff.md",
+        "aiwork/workflow/runs/TASK-010-WEBVIEW-METRICS/human-test.md",
+        "aiwork/workflow/runs/TASK-010-WEBVIEW-METRICS/verifier-report.md"
+      ],
+      "sourceRecord": "build/staging/TASK-010-WEBVIEW-METRICS/source.json",
+      "sourceRecordSha256": "E94426C0CC45ECBEA031EDA9FB42D482A87FEEF8A71876984A71863E2E796577",
+      "sourceMetadata": {
+        "id": "TASK-010-WEBVIEW-METRICS-rc.6-coder-final",
+        "version": "0.1.0-rc.6",
+        "headReferenceOnly": "d3d8f58ba8490212a16f33faecb4b5533d79bd5d",
+        "dirtySnapshot": true,
+        "sourceFileCount": 73,
+        "sourceManifest": "build/verification/TASK-010-WEBVIEW-METRICS/coder/source-manifest.json",
+        "sourceManifestSha256": "247850E775997D6C4E702F84D0FC7660CEAB95C98B710344EC1C2D04BBDFB1CD",
+        "signature": "NotSigned",
+        "release": false
+      },
+      "humanAcceptanceSummary": "用户提供 WebView 性能日志，连接等待和 loading 仍存在",
+      "humanAcceptanceSource": "aiwork/devlog.md"
+    },
+    {
+      "directory": "build/staging/TASK-011-IPC-REUSE",
+      "version": "0.1.0-rc.7",
+      "published": false,
+      "status": "removed-2026-10-23",
+      "artifacts": [
+        {
+          "path": "build/staging/TASK-011-IPC-REUSE/ClickMaster-0.1.0-rc.7-windows-x64.zip",
+          "bytes": 3068834,
+          "sha256": "66D35133DAE371F7C68203D5A1D8F9417552E465B9F1DE2D2705EC0FDC70D934",
+          "action": "delete",
+          "reason": "obsolete-candidate-after-version-record"
+        },
+        {
+          "path": "build/staging/TASK-011-IPC-REUSE/ClickMaster.exe",
+          "bytes": 9772032,
+          "sha256": "4A6761F90C0894BABF8B4080B94F77393588CC49337F4FEA89325D4A128A784E",
+          "action": "delete",
+          "reason": "obsolete-candidate-after-version-record"
+        }
+      ],
+      "declaredChecks": [
+        {
+          "kind": "exe",
+          "declaredPath": "build/verification/TASK-011-IPC-REUSE/coder/final/ClickMaster.exe",
+          "declaredSha256": "4A6761F90C0894BABF8B4080B94F77393588CC49337F4FEA89325D4A128A784E",
+          "matches": true
+        },
+        {
+          "kind": "zip",
+          "declaredPath": "build/staging/TASK-011-IPC-REUSE/ClickMaster-0.1.0-rc.7-windows-x64.zip",
+          "declaredSha256": "66D35133DAE371F7C68203D5A1D8F9417552E465B9F1DE2D2705EC0FDC70D934",
+          "matches": true
+        }
+      ],
+      "acceptanceRecords": [
+        "aiwork/workflow/runs/TASK-011-IPC-REUSE/acceptance.md",
+        "aiwork/workflow/runs/TASK-011-IPC-REUSE/coder-handoff.md",
+        "aiwork/workflow/runs/TASK-011-IPC-REUSE/human-test.md",
+        "aiwork/workflow/runs/TASK-011-IPC-REUSE/verifier-report.md"
+      ],
+      "sourceRecord": "build/staging/TASK-011-IPC-REUSE/source.json",
+      "sourceRecordSha256": "FD2C127E0C7ACF09A432464841A4E9A27FFE8D902D9F003FE90239E02FE59278",
+      "sourceMetadata": {
+        "id": "TASK-011-IPC-REUSE-rc.7-coder-final",
+        "version": "0.1.0-rc.7",
+        "headReferenceOnly": "d3d8f58ba8490212a16f33faecb4b5533d79bd5d",
+        "dirtySnapshot": true,
+        "sourceFileCount": 73,
+        "sourceManifest": "build/verification/TASK-011-IPC-REUSE/coder/source-manifest.json",
+        "sourceManifestSha256": "A3F36AD05CAB3D10FF1BC5DD5744AC8C8B6AC50503A146F7217050470B99F035",
+        "signature": "NotSigned",
+        "release": false
+      },
+      "humanAcceptanceSummary": "用户人工验收通过，loading 光标消失",
+      "humanAcceptanceSource": "aiwork/devlog.md"
+    },
+    {
+      "directory": "build/staging/TASK-012-UI-USER-FACING",
+      "version": "0.1.0-rc.8",
+      "published": false,
+      "status": "removed-2026-10-23",
+      "artifacts": [
+        {
+          "path": "build/staging/TASK-012-UI-USER-FACING/ClickMaster-0.1.0-rc.8-windows-x64.zip",
+          "bytes": 3221700,
+          "sha256": "44E1CC66818311653E5469A9D2857ED894E1C482AEC9675367FBA29047AC88B8",
+          "action": "delete",
+          "reason": "obsolete-candidate-after-version-record"
+        },
+        {
+          "path": "build/staging/TASK-012-UI-USER-FACING/ClickMaster.exe",
+          "bytes": 9772544,
+          "sha256": "7EB0E7661BF4700C622416A7FE0F813717DD978CCB571862C9262DB74E4BE61E",
+          "action": "delete",
+          "reason": "obsolete-candidate-after-version-record"
+        }
+      ],
+      "declaredChecks": [
+        {
+          "kind": "exe",
+          "declaredPath": "build/staging/TASK-012-UI-USER-FACING/ClickMaster.exe",
+          "declaredSha256": "7EB0E7661BF4700C622416A7FE0F813717DD978CCB571862C9262DB74E4BE61E",
+          "matches": true
+        },
+        {
+          "kind": "zip",
+          "declaredPath": "build/staging/TASK-012-UI-USER-FACING/ClickMaster-0.1.0-rc.8-windows-x64.zip",
+          "declaredSha256": "44E1CC66818311653E5469A9D2857ED894E1C482AEC9675367FBA29047AC88B8",
+          "matches": true
+        }
+      ],
+      "acceptanceRecords": [
+        "aiwork/workflow/runs/TASK-012-UI-USER-FACING/acceptance.md",
+        "aiwork/workflow/runs/TASK-012-UI-USER-FACING/coder-handoff.md",
+        "aiwork/workflow/runs/TASK-012-UI-USER-FACING/human-feedback.md",
+        "aiwork/workflow/runs/TASK-012-UI-USER-FACING/human-test.md",
+        "aiwork/workflow/runs/TASK-012-UI-USER-FACING/verifier-report.md"
+      ],
+      "sourceRecord": "build/staging/TASK-012-UI-USER-FACING/source.json",
+      "sourceRecordSha256": "7963355C15F923CC02DC65ED5B264F0D4FC41A7C57F189C5C01FBD8D43FDB2B2",
+      "sourceMetadata": {
+        "id": "TASK-012-UI-USER-FACING-rc.8-coder-final",
+        "version": "0.1.0-rc.8",
+        "dirtySnapshot": true,
+        "sourceFileCount": 89,
+        "sourceManifest": "build/verification/TASK-012-UI-USER-FACING/coder/source-manifest.json",
+        "sourceManifestSha256": "99E0E5A8CD610FDD90605A6F5BF0ABE3F54EEB35A93D2B0465C0EF2FBB79A61C",
+        "signature": "NotSigned",
+        "release": false
+      },
+      "humanAcceptanceSummary": "用户初次其余验收通过，后补充多页草图偏差，后续 rc.9 对齐",
+      "humanAcceptanceSource": "aiwork/workflow/runs/TASK-012-UI-USER-FACING/human-feedback.md"
+    },
+    {
+      "directory": "build/staging/TASK-013-UI-SKETCH-ALIGN",
+      "version": "0.1.0-rc.9",
+      "published": false,
+      "status": "keep-current-accepted",
+      "artifacts": [
+        {
+          "path": "build/staging/TASK-013-UI-SKETCH-ALIGN/ClickMaster-0.1.0-rc.9-windows-x64.zip",
+          "bytes": 3091209,
+          "sha256": "A4BBB6FA2C9D5072D066477EDB0CF1BF1BA027C6EDA3E9E226F79A418422DD27",
+          "action": "keep-active-current",
+          "reason": "latest-accepted-rc9-and-live-runtime"
+        },
+        {
+          "path": "build/staging/TASK-013-UI-SKETCH-ALIGN/ClickMaster.exe",
+          "bytes": 9774592,
+          "sha256": "1E0D28BBC669F1E0A4E92CB5DA594D79B4179C83DE841550E84A750B85B31F1E",
+          "action": "keep-active-current",
+          "reason": "latest-accepted-rc9-and-live-runtime"
+        }
+      ],
+      "declaredChecks": [
+        {
+          "kind": "exe",
+          "declaredPath": "build/staging/TASK-013-UI-SKETCH-ALIGN/ClickMaster.exe",
+          "declaredSha256": "1E0D28BBC669F1E0A4E92CB5DA594D79B4179C83DE841550E84A750B85B31F1E",
+          "matches": true
+        },
+        {
+          "kind": "zip",
+          "declaredPath": "build/staging/TASK-013-UI-SKETCH-ALIGN/ClickMaster-0.1.0-rc.9-windows-x64.zip",
+          "declaredSha256": "A4BBB6FA2C9D5072D066477EDB0CF1BF1BA027C6EDA3E9E226F79A418422DD27",
+          "matches": true
+        }
+      ],
+      "acceptanceRecords": [
+        "aiwork/workflow/runs/TASK-013-UI-SKETCH-ALIGN/acceptance.md",
+        "aiwork/workflow/runs/TASK-013-UI-SKETCH-ALIGN/coder-handoff.md",
+        "aiwork/workflow/runs/TASK-013-UI-SKETCH-ALIGN/human-acceptance.md",
+        "aiwork/workflow/runs/TASK-013-UI-SKETCH-ALIGN/human-test.md",
+        "aiwork/workflow/runs/TASK-013-UI-SKETCH-ALIGN/verifier-report.md"
+      ],
+      "sourceRecord": "build/staging/TASK-013-UI-SKETCH-ALIGN/source.json",
+      "sourceRecordSha256": "E3AC56F9904B532695835CA7824B71D3A89F879C8004B5064317BA0386BF3F4B",
+      "sourceMetadata": {
+        "id": "TASK-013-UI-SKETCH-ALIGN-rc.9-coder-final",
+        "version": "0.1.0-rc.9",
+        "dirtySnapshot": true,
+        "sourceFileCount": 84,
+        "sourceManifest": "build/verification/TASK-013-UI-SKETCH-ALIGN/coder/source-manifest.json",
+        "sourceManifestSha256": "12882DA4D4B1DB411E8B9C047B3DC70046C2640A330A836F5864E941816B1521",
+        "signature": "NotSigned",
+        "release": false
+      },
+      "humanAcceptanceSummary": "用户确认 TASK-013 人工 UI 验收通过",
+      "humanAcceptanceSource": "aiwork/workflow/runs/TASK-013-UI-SKETCH-ALIGN/human-acceptance.md"
+    }
+  ],
+  "removalExecutedAt": "2026-10-23T07:23:17.5013532Z",
+  "removalResult": "aiwork/workflow/runs/TASK-014-WORKSPACE-CLEANUP/execution-result.json"
+}

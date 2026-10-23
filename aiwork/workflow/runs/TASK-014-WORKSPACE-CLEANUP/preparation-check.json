@@ -1,0 +1,17 @@
+{
+  "phase": "preparation-only",
+  "removalExecuted": false,
+  "filesPlanned": 35303,
+  "candidates": 32532,
+  "candidateBytes": 4347965512,
+  "artifactChecks": 18,
+  "protectedSourceFiles": 84,
+  "uniqueRelativePaths": true,
+  "trackedFilesExcluded": true,
+  "rc9Excluded": true,
+  "linkTargetsExcluded": true,
+  "filePlan": "build/verification/TASK-014-WORKSPACE-CLEANUP/preparation/file-plan.json",
+  "filePlanSha256": "ED804C298D45AA08F477BCDB52C2D94BCC641E19DFC88587472EE2CFDD9ADC0D",
+  "historicalVersionsSha256": "AD98A6CAC0B53D5D7D2E4A15C5DB8C8E94AEA01A689DCA7A752BAAECEC6EF469",
+  "errors": []
+}

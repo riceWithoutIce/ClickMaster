@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "ClickMaster",
+  "version": "0.1.0-rc.9",
+  "identifier": "io.github.ricewithoutice.clickmaster",
+  "build": {
+    "beforeDevCommand": "node scripts/project.mjs frontend",
+    "devUrl": "http://127.0.0.1:1420",
+    "beforeBuildCommand": "node scripts/project.mjs build",
+    "frontendDist": "../build/frontend"
+  },
+  "app": {
+    "windows": [],
+    "security": { "csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' asset: data:; connect-src ipc: http://ipc.localhost" }
+  },
+  "bundle": { "active": false, "icon": ["icons/icon.ico", "icons/icon.png"] }
+}

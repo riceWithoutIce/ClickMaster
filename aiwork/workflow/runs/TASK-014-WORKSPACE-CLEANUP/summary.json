@@ -1,0 +1,119 @@
+{
+  "preparedAt": "2026-10-23T07:04:29.526Z",
+  "mode": "prepare-only-no-deletion-no-move",
+  "rule": "retain-latest-accepted-binaries-history-metadata-only",
+  "latestAcceptedCandidate": "build/staging/TASK-013-UI-SKETCH-ALIGN",
+  "activeApplicationObservation": "rc9 application instances observed; keep entire rc9 runtime; recheck processes before execution; no process terminated",
+  "candidates": 32532,
+  "candidateBytes": 4347965512,
+  "grouped": [
+    {
+      "action": "keep-evidence",
+      "reason": "tracked-file-or-directory-contract",
+      "files": 1,
+      "bytes": 0
+    },
+    {
+      "action": "delete",
+      "reason": "obsolete-candidate-after-version-record",
+      "files": 64,
+      "bytes": 101094942
+    },
+    {
+      "action": "delete",
+      "reason": "historical-webview-cache",
+      "files": 4942,
+      "bytes": 1111697036
+    },
+    {
+      "action": "keep-evidence",
+      "reason": "historical-config-logs-or-runtime-receipts",
+      "files": 6,
+      "bytes": 157925
+    },
+    {
+      "action": "keep-active-current",
+      "reason": "latest-accepted-rc9-and-live-runtime",
+      "files": 280,
+      "bytes": 88101223
+    },
+    {
+      "action": "keep-evidence",
+      "reason": "report-log-manifest-fixture-script-or-ui-reference",
+      "files": 2484,
+      "bytes": 4485874
+    },
+    {
+      "action": "delete",
+      "reason": "historical-executable-package-or-debug-output",
+      "files": 87,
+      "bytes": 222270530
+    },
+    {
+      "action": "delete",
+      "reason": "isolated-regenerable-build-or-dependency-cache",
+      "files": 27143,
+      "bytes": 2898123262
+    },
+    {
+      "action": "delete",
+      "reason": "historical-full-source-copy-current-source-and-reports-retained",
+      "files": 292,
+      "bytes": 2196815
+    },
+    {
+      "action": "delete",
+      "reason": "regenerable-synthetic-performance-fixture",
+      "files": 3,
+      "bytes": 12582912
+    },
+    {
+      "action": "delete",
+      "reason": "root-version-command-residue",
+      "files": 1,
+      "bytes": 15
+    }
+  ],
+  "deferredSharedOutputs": [
+    {
+      "path": "build/cargo",
+      "action": "keep-until-release-package-complete",
+      "files": 6959,
+      "bytes": 3222916758
+    },
+    {
+      "path": "build/cache",
+      "action": "keep-until-release-package-complete",
+      "files": 12484,
+      "bytes": 487072914
+    },
+    {
+      "path": "build/frontend",
+      "action": "keep-until-release-package-complete",
+      "files": 3,
+      "bytes": 121647
+    },
+    {
+      "path": "build/logs",
+      "action": "keep-until-release-package-complete",
+      "files": 1,
+      "bytes": 0
+    },
+    {
+      "path": "node_modules",
+      "action": "keep-until-release-package-complete",
+      "files": 1271,
+      "bytes": 81034428
+    },
+    {
+      "path": "src-tauri/gen",
+      "action": "keep-until-release-package-complete",
+      "files": 4,
+      "bytes": 301423
+    }
+  ],
+  "linksHeld": [
+    "build/verification/TASK-003/verifier/source/node_modules"
+  ],
+  "removalExecuted": false
+}

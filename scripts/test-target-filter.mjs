@@ -1,0 +1,103 @@
+import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+import ts from 'typescript';
+
+// Run the production pure helpers without a browser, server, real windows, or extra dependency.
+const source = readFileSync(new URL('../src/target-filter.ts', import.meta.url), 'utf8');
+const compiled = ts.transpileModule(source, { compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022 } }).outputText;
+const { filterTargets, selectedTarget, displayTitle, displayStatus } = await import(`data:text/javascript;base64,${Buffer.from(compiled).toString('base64')}`);
+const windows = [
+  { token: 'one', title: 'Fixture Alpha', exe: 'SampleGame.exe', pid: 1234, status: 'visible' },
+  { token: 'two', title: '', exe: 'Editor.exe', pid: 5678, status: 'hidden' },
+  { token: 'three', title: 'Fixture Beta', exe: 'Other.exe', pid: 9123, status: 'minimized' },
+];
+const before = structuredClone(windows);
+assert.deepEqual(filterTargets(windows, '  '), windows);
+assert.deepEqual(filterTargets(windows, 'aLPHa').map(w => w.token), ['one']);
+assert.deepEqual(filterTargets(windows, '  GAME.EX  ').map(w => w.token), ['one']);
+assert.deepEqual(filterTargets(windows, '123').map(w => w.token), ['one', 'three']);
+assert.equal(filterTargets(windows, 'no-match').length, 0);
+assert.equal(filterTargets([], '').length, 0);
+assert.equal(filterTargets(windows, 'fixture').length, 2);
+assert.equal(windows.length, 3);
+const bound = structuredClone(windows[1]);
+assert.equal(selectedTarget(filterTargets(windows, 'alpha'), 'two'), undefined);
+assert.equal(selectedTarget(filterTargets(windows, 'editor'), 'two')?.token, 'two');
+assert.deepEqual(bound, before[1]);
+assert.deepEqual(windows, before);
+assert.equal(displayTitle(windows[1]), '无标题窗口');
+assert.equal(displayTitle(windows[0]), 'Fixture Alpha');
+assert.deepEqual(windows.map(displayStatus), ['可见', '隐藏', '最小化']);
+console.log('Target filter: PASS (partial EXE/title/PID, case/whitespace, empty/counts, excluded selection, immutable input, display labels).');
+const positionSource = readFileSync(new URL('../src/overlay-position.ts', import.meta.url), 'utf8');
+const positionCode = ts.transpileModule(positionSource, { compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022 } }).outputText;
+const { overlayPosition } = await import(`data:text/javascript;base64,${Buffer.from(positionCode).toString('base64')}`);
+assert.deepEqual(overlayPosition(true, '', ' '), { center: true, x: null, y: null });
+assert.deepEqual(overlayPosition(false, '0', 45), { center: false, x: 0, y: 45 });
+assert.deepEqual(overlayPosition(false, -1, '2.5'), { center: false, x: -1, y: 2.5 });
+assert.deepEqual(overlayPosition(false, Infinity, 'bad'), { center: false, x: null, y: null });
+console.log('Overlay position: PASS (empty, center/custom, zero, invalid integer candidates, finite JSON).');
+const inputSource = readFileSync(new URL('../src/single-input.ts', import.meta.url), 'utf8');
+const inputCode = ts.transpileModule(inputSource, { compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022 } }).outputText;
+const { keys, inputTitle, receiptText, ipcReadText, ipcFailureText } = await import(`data:text/javascript;base64,${Buffer.from(inputCode).toString('base64')}`);
+assert.equal(keys.length, 42); assert.equal(new Set(keys.map(key => key.value)).size, 42); assert.equal(keys[0].value, 'Space');
+assert.equal(inputTitle({ phase: 'countdown', remainingMs: 2001 }), '倒计时 3 秒');
+assert.equal(inputTitle({ phase: 'partial', remainingMs: 0 }), '部分投递');
+assert.equal(receiptText('按下', { posted: true, error: null }), '按下：已投递');
+assert.equal(receiptText('释放', { posted: false, error: { reason: '失败', errorCode: 5 } }), '释放：失败（错误码 5）');
+console.log('Single input UI helpers: PASS (whitelist/default, countdown rounding, partial receipt/error code).');
+const routeSource = readFileSync(new URL('../src/receiver-routing.ts', import.meta.url), 'utf8');
+const routeCode = ts.transpileModule(routeSource, { compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022 } }).outputText;
+const { routeReady, routeMode, receiverLabel } = await import(`data:text/javascript;base64,${Buffer.from(routeCode).toString('base64')}`);
+const receiver = { token: 'fixture', exe: 'Content.exe', pid: 4321, class: 'Windows.UI.Core.CoreWindow', width: 800, height: 600, isSelf: false };
+assert.equal(routeReady({ phase: 'automatic', selected: receiver }), true);
+assert.equal(routeReady({ phase: 'manual', selected: receiver }), true);
+assert.equal(routeReady({ phase: 'choose', selected: null }), false);
+assert.equal(routeReady({ phase: 'invalid', selected: receiver }), false);
+assert.equal(routeMode('invalid'), '已失效');
+assert.match(receiverLabel(receiver), /Content.exe · PID 4321/);
+assert.match(receiverLabel({ ...receiver, isSelf: true }), /^绑定窗口自身/);
+console.log('Receiver routing UI helpers: PASS (ready states, ambiguity/invalid gate, actual receiver identity labels).');
+const channelSource = readFileSync(new URL('../src/input-channel.ts', import.meta.url), 'utf8');
+const channelCode = ts.transpileModule(channelSource, { compilerOptions: { module: ts.ModuleKind.ESNext, target: ts.ScriptTarget.ES2022 } }).outputText.replace("from './receiver-routing'", `from 'data:text/javascript;base64,${Buffer.from(routeCode).toString('base64')}'`);
+const { executionReady, intervalError } = await import(`data:text/javascript;base64,${Buffer.from(channelCode).toString('base64')}`);
+const noRoute = { epoch: 1, phase: 'choose', selected: null, candidates: [], message: '' };
+const channel = { selected: 'taptaploot-ipc', epoch: 9, ipcAvailable: true, reason: '' };
+assert.equal(executionReady(channel, 9, noRoute), true);
+assert.equal(executionReady({ ...channel, ipcAvailable: false }, 9, noRoute), false);
+assert.equal(executionReady(channel, 10, noRoute), false);
+assert.equal(executionReady({ ...channel, selected: 'message' }, 9, noRoute), false);
+assert.equal(executionReady({ ...channel, selected: 'message' }, 9, { ...noRoute, phase: 'automatic', selected: receiver }), true);
+assert.equal(executionReady({ ...channel, selected: 'unknown' }, 9, { ...noRoute, phase: 'automatic', selected: receiver }), false);
+assert.equal(inputTitle({ phase: 'completed', remainingMs: 0 }), '已发送');
+assert.equal(inputTitle({ phase: 'draining', remainingMs: 0 }), '已发送 · 收尾中');
+assert.equal(ipcReadText({ written: true, readStatus: 'unconfirmed', readErrorCode: null }), '未确认，不阻断发送');
+assert.match(ipcReadText({ written: true, readStatus: 'failed', readErrorCode: 109 }), /109.*不阻断发送/);
+assert.match(ipcReadText({ written: true, readStatus: 'confirmed', readErrorCode: null }), /仅传输层/);
+assert.equal(ipcFailureText({ failure: null }), '');
+assert.equal(ipcFailureText({ failure: { stage: 'target', reason: 'window-minimized', errorCode: null } }), '目标核验：窗口已最小化');
+assert.equal(ipcFailureText({ failure: { stage: 'write', reason: 'system-call', errorCode: 109 } }), '单帧写入：系统操作失败（系统码 109）');
+assert.equal(ipcFailureText({ failure: { stage: 'private-path', reason: 'private-token', errorCode: null } }), '执行：失败原因未确认');
+console.log('Channel UI policy: PASS (IPC independent of message routing, unsupported/epoch guards, no unknown-channel fallback, transport-only result).');
+for (const ipc of [false,true]) {
+  assert.equal(intervalError(2000,2000,ipc),'');
+  assert.equal(intervalError(1,1,ipc),'');
+  assert.equal(intervalError(100,60000,ipc),'');
+  assert.equal(intervalError(60000,60000,ipc),'');
+  for(const [min,max] of [['',2000],[2000,''],[0.5,2000],[0,100],[-1,100],[100.5,3000],[3000,2000],[100,60001],[NaN,60000],[Infinity,60000]]) assert.notEqual(intervalError(min,max,ipc),'');
+}
+assert.equal(inputTitle({phase:'waiting',remainingMs:1540}),'下次等待 1540 毫秒');
+console.log('Repeat interval UI policy: PASS (fixed/random bounds, empty/fraction/order/overflow rejection, channel limits, waiting label).');
+
+const timeSource=readFileSync(new URL('../src/execution-time.ts',import.meta.url),'utf8');
+const timeCode=ts.transpileModule(timeSource,{compilerOptions:{module:ts.ModuleKind.ESNext,target:ts.ScriptTarget.ES2022}}).outputText;
+const {durationError,clockText,timingText}=await import(`data:text/javascript;base64,${Buffer.from(timeCode).toString('base64')}`);
+assert.equal(durationError('permanent','','',NaN),'');assert.equal(durationError('timed',0,0,1),'');assert.equal(durationError('timed',99,59,59),'');
+for(const values of [['',0,1],[0,0,0],[100,0,0],[0,60,0],[0,0,60],[0,-1,1],[0,0,.5],[Infinity,0,1]])assert.notEqual(durationError('timed',...values),'');
+assert.equal(clockText(359999),'99:59:59');
+const timing={limitSeconds:null,elapsedSeconds:12,remainingSeconds:null,started:true,endReason:null,triggerReason:null};
+assert.equal(timingText(timing,true,1),'永久 · 已运行 00:00:12');
+assert.equal(timingText({...timing,limitSeconds:30,remainingSeconds:18},true,1),'已运行 00:00:12 · 剩余 00:00:18');
+assert.equal(timingText({...timing,endReason:'手动停止'},true,1),'手动停止 · 耗时 00:00:12');
+console.log('Duration UI helpers: PASS (mode-specific validation, boundaries, second display, frozen summary).');
+assert.equal(timingText({...timing,triggerReason:'时长已到',endReason:'清理未确认'},true,1),'时长已到 · 清理未确认 · 耗时 00:00:12');

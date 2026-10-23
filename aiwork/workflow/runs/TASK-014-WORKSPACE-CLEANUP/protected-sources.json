@@ -1,0 +1,594 @@
+{
+  "preparedAt": "2026-10-23T07:04:29.526Z",
+  "note": "Documentation changes after rc9 acceptance are expected and are not binary drift.",
+  "entries": [
+    {
+      "path": "README.md",
+      "bytes": 3915,
+      "sha256": "FADDEDB2F88F382DC31F9789F19FAB77C47D7B91EE0170D5CD51308DB4295A1E",
+      "acceptedSnapshotSha256": "FADDEDB2F88F382DC31F9789F19FAB77C47D7B91EE0170D5CD51308DB4295A1E",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "aiwork/README.md",
+      "bytes": 6538,
+      "sha256": "FF91AE4FA3BBEE45F79B3A5ED9192EE845B685682D5ABCD95FA45CEADEAC4ED6",
+      "acceptedSnapshotSha256": "FF91AE4FA3BBEE45F79B3A5ED9192EE845B685682D5ABCD95FA45CEADEAC4ED6",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "aiwork/debug/README.md",
+      "bytes": 1142,
+      "sha256": "923DDEF304B2C06AEE898F5875CDB664696522B4E93B1A9558072DE2ED008DFD",
+      "acceptedSnapshotSha256": "923DDEF304B2C06AEE898F5875CDB664696522B4E93B1A9558072DE2ED008DFD",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "aiwork/workflow/README.md",
+      "bytes": 2507,
+      "sha256": "1A1CCB1A13DC289FD3AD938415F2E1A93B39DF1DE3B673005351B7DC7794553B",
+      "acceptedSnapshotSha256": "1A1CCB1A13DC289FD3AD938415F2E1A93B39DF1DE3B673005351B7DC7794553B",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "docs/LIMITATIONS.md",
+      "bytes": 4965,
+      "sha256": "7C6662368494CC77F2542414A3AC16521BEB338AA3278840086B1F674C60C846",
+      "acceptedSnapshotSha256": "7C6662368494CC77F2542414A3AC16521BEB338AA3278840086B1F674C60C846",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "docs/USAGE.md",
+      "bytes": 7913,
+      "sha256": "4D7A23C487D8AEF2873B5D06D0C0E41806616D9BBE734D2606BC3FB9BA24CC51",
+      "acceptedSnapshotSha256": "4D7A23C487D8AEF2873B5D06D0C0E41806616D9BBE734D2606BC3FB9BA24CC51",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "index.html",
+      "bytes": 257,
+      "sha256": "E8A542C4795A48063F888DC4D3889B290E23EAFC0722233E02026D8845B31442",
+      "acceptedSnapshotSha256": "E8A542C4795A48063F888DC4D3889B290E23EAFC0722233E02026D8845B31442",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 56388,
+      "sha256": "BB040B5F159266140835DA02FA48FE906F33EFA0D18FD9D7AA8D36BF1D9DF0A1",
+      "acceptedSnapshotSha256": "BB040B5F159266140835DA02FA48FE906F33EFA0D18FD9D7AA8D36BF1D9DF0A1",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "package.json",
+      "bytes": 719,
+      "sha256": "3D689BB7DC45924F31B6A252098AB9B82F7ADE9FAE5FA98B4DB6EF7FF8975B42",
+      "acceptedSnapshotSha256": "3D689BB7DC45924F31B6A252098AB9B82F7ADE9FAE5FA98B4DB6EF7FF8975B42",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "release/README.md",
+      "bytes": 4021,
+      "sha256": "91354CE347DA1517B119B06117EC071E0E4792F6BB4D7FF8DAF4804233408845",
+      "acceptedSnapshotSha256": "2DF1A1C6092D13C429912F960876A3F72D16A4E234D3B75E27EB9E788F04C0E2",
+      "changedSinceAcceptedSnapshot": true
+    },
+    {
+      "path": "release/archive/README.md",
+      "bytes": 431,
+      "sha256": "7E6DE6FC45229F2BB4DFCE05DF591A864A96190BDE649C2ECF518C642AEBC1F1",
+      "acceptedSnapshotSha256": "0537FDB25171D55BCFD3701922BCB600D324AC5F808DB41EA4C57912FB376900",
+      "changedSinceAcceptedSnapshot": true
+    },
+    {
+      "path": "release/current/README.md",
+      "bytes": 287,
+      "sha256": "D7E2C5587841945455DA42397C485A3AFB2DADF6CD31F69971FE11B133A273C8",
+      "acceptedSnapshotSha256": "D7E2C5587841945455DA42397C485A3AFB2DADF6CD31F69971FE11B133A273C8",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "release/preview/README.md",
+      "bytes": 420,
+      "sha256": "04AFE7FEB51B1187611820D4814804EFE46CAD09D16B79B0E27BDB6F7218F17E",
+      "acceptedSnapshotSha256": "9AFDE21C7EA8D21F7EC41175D070601421F128FB0C78E9FB432ED561D417E583",
+      "changedSinceAcceptedSnapshot": true
+    },
+    {
+      "path": "scripts/README.md",
+      "bytes": 2928,
+      "sha256": "9DEDC3381D2432DB43D0E0041115A6035FF08BAF1670CCE5F04C815CBFCB86E0",
+      "acceptedSnapshotSha256": "9DEDC3381D2432DB43D0E0041115A6035FF08BAF1670CCE5F04C815CBFCB86E0",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "scripts/create-icon.mjs",
+      "bytes": 1712,
+      "sha256": "791168A32A217E879D32357064580E0528B0D17A9B5D867AAAB365F2FA254D18",
+      "acceptedSnapshotSha256": "791168A32A217E879D32357064580E0528B0D17A9B5D867AAAB365F2FA254D18",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "scripts/environment.mjs",
+      "bytes": 1195,
+      "sha256": "14ABD02647AE40144354812465598299364AA643E7F2EE170EBDE7F3150CE0F3",
+      "acceptedSnapshotSha256": "14ABD02647AE40144354812465598299364AA643E7F2EE170EBDE7F3150CE0F3",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "scripts/inspect-pe.mjs",
+      "bytes": 1829,
+      "sha256": "C59CA684A2D7B34A8D1A68536A845C4B03FF7CEA3C5E1D4E8EB4D40FE018E6B7",
+      "acceptedSnapshotSha256": "C59CA684A2D7B34A8D1A68536A845C4B03FF7CEA3C5E1D4E8EB4D40FE018E6B7",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "scripts/npm.ps1",
+      "bytes": 847,
+      "sha256": "CACA09A50164F2B2B61E3AE07034B2F456EA0A35A64EEDDF251B565DCCDB3032",
+      "acceptedSnapshotSha256": "CACA09A50164F2B2B61E3AE07034B2F456EA0A35A64EEDDF251B565DCCDB3032",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "scripts/project.mjs",
+      "bytes": 2586,
+      "sha256": "B67A296F5B80814460E01BA9864DD100AE0B95D78A07C6BD950F1EFF35D91E32",
+      "acceptedSnapshotSha256": "B67A296F5B80814460E01BA9864DD100AE0B95D78A07C6BD950F1EFF35D91E32",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "scripts/test-target-filter.mjs",
+      "bytes": 9651,
+      "sha256": "3DB4662C5FC550FC93145DBEB74F5B78F3ACE601E009F2D11309FD0880020603",
+      "acceptedSnapshotSha256": "3DB4662C5FC550FC93145DBEB74F5B78F3ACE601E009F2D11309FD0880020603",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "scripts/verify-pe-icon.mjs",
+      "bytes": 5474,
+      "sha256": "DB559794A9733498093F0C0921260A1381FCE8D6221027D53BBE4E68C9E64ED0",
+      "acceptedSnapshotSha256": "DB559794A9733498093F0C0921260A1381FCE8D6221027D53BBE4E68C9E64ED0",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "scripts/version.mjs",
+      "bytes": 1730,
+      "sha256": "BCF8D4F24256690764FAA13D83A248E955C1AB5DE34CD618F15D7F397F67AF97",
+      "acceptedSnapshotSha256": "BCF8D4F24256690764FAA13D83A248E955C1AB5DE34CD618F15D7F397F67AF97",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src-tauri/Cargo.lock",
+      "bytes": 105299,
+      "sha256": "D8DD8DEAC0DE46CF72A5906A736BA95AC638D923FDB09EAA835950B4A15DF9A0",
+      "acceptedSnapshotSha256": "D8DD8DEAC0DE46CF72A5906A736BA95AC638D923FDB09EAA835950B4A15DF9A0",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src-tauri/Cargo.toml",
+      "bytes": 1079,
+      "sha256": "25D75C15EE419F5A8D6204CCD12E0CE9BB58177F633FD44E822236FD6356A2F5",
+      "acceptedSnapshotSha256": "25D75C15EE419F5A8D6204CCD12E0CE9BB58177F633FD44E822236FD6356A2F5",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src-tauri/README.md",
+      "bytes": 978,
+      "sha256": "A67C314A966AE2D95DF8811D90FE64AB2DFFFB46DB05410F86FBDAD8F43BAA96",
+      "acceptedSnapshotSha256": "A67C314A966AE2D95DF8811D90FE64AB2DFFFB46DB05410F86FBDAD8F43BAA96",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src-tauri/build.rs",
+      "bytes": 617,
+      "sha256": "3574357A16203F39BBFB4EA5FC99F27E846C711AE445ABD5621FBDF69505318C",
+      "acceptedSnapshotSha256": "3574357A16203F39BBFB4EA5FC99F27E846C711AE445ABD5621FBDF69505318C",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src-tauri/capabilities/README.md",
+      "bytes": 216,
+      "sha256": "6ECE96935554521DBD53FC5450321EBCD329FCBF554BAA7CC4701DA62A632895",
+      "acceptedSnapshotSha256": "6ECE96935554521DBD53FC5450321EBCD329FCBF554BAA7CC4701DA62A632895",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src-tauri/capabilities/main.json",
+      "bytes": 224,
+      "sha256": "BB5464FA47191B41A5F84BEEB487CB47DBB35A13D04D95EA5AC3C28C203B273B",
+      "acceptedSnapshotSha256": "BB5464FA47191B41A5F84BEEB487CB47DBB35A13D04D95EA5AC3C28C203B273B",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src-tauri/gen/schemas/acl-manifests.json",
+      "bytes": 66720,
+      "sha256": "BDC3CED2AE416F11B23BC9C9B62341A3A59AA7BB5322F04F197BB08CB610409F",
+      "acceptedSnapshotSha256": "BDC3CED2AE416F11B23BC9C9B62341A3A59AA7BB5322F04F197BB08CB610409F",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src-tauri/gen/schemas/capabilities.json",
+      "bytes": 177,
+      "sha256": "7A23A463D82FAFEAD4916282CCCF533D7738A631E667FFAF517AFFFF3800D9D3",
+      "acceptedSnapshotSha256": "7A23A463D82FAFEAD4916282CCCF533D7738A631E667FFAF517AFFFF3800D9D3",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src-tauri/gen/schemas/desktop-schema.json",
+      "bytes": 117263,
+      "sha256": "4A946FE48FBB0C7C535EA53E6070BD8276F3F3D74F96EFBAA6D85BD7B53B0F05",
+      "acceptedSnapshotSha256": "4A946FE48FBB0C7C535EA53E6070BD8276F3F3D74F96EFBAA6D85BD7B53B0F05",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src-tauri/gen/schemas/windows-schema.json",
+      "bytes": 117263,
+      "sha256": "4A946FE48FBB0C7C535EA53E6070BD8276F3F3D74F96EFBAA6D85BD7B53B0F05",
+      "acceptedSnapshotSha256": "4A946FE48FBB0C7C535EA53E6070BD8276F3F3D74F96EFBAA6D85BD7B53B0F05",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src-tauri/icons/README.md",
+      "bytes": 807,
+      "sha256": "5F6013328FA281728B9E041FF7DA1E04636AA0F4803E8C479A340D3E9B63888F",
+      "acceptedSnapshotSha256": "5F6013328FA281728B9E041FF7DA1E04636AA0F4803E8C479A340D3E9B63888F",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src-tauri/icons/icon.ico",
+      "bytes": 1126,
+      "sha256": "5E077E050FDA6F0ED13E1F5E3FC78141C967DE019976CE9897091BF6A48DB744",
+      "acceptedSnapshotSha256": "5E077E050FDA6F0ED13E1F5E3FC78141C967DE019976CE9897091BF6A48DB744",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src-tauri/icons/icon.png",
+      "bytes": 1104,
+      "sha256": "AC160094426F536177AD7101CCBFF0EDE9FC5B1EE2A9684DCD88611F70756EB9",
+      "acceptedSnapshotSha256": "AC160094426F536177AD7101CCBFF0EDE9FC5B1EE2A9684DCD88611F70756EB9",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src-tauri/icons/source.png",
+      "bytes": 1104,
+      "sha256": "AC160094426F536177AD7101CCBFF0EDE9FC5B1EE2A9684DCD88611F70756EB9",
+      "acceptedSnapshotSha256": "AC160094426F536177AD7101CCBFF0EDE9FC5B1EE2A9684DCD88611F70756EB9",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src-tauri/src/README.md",
+      "bytes": 7020,
+      "sha256": "3AE92CC545E1E3A9591A7FAD6956440818F5307889991CBF5B16D9FFFA1278F9",
+      "acceptedSnapshotSha256": "3AE92CC545E1E3A9591A7FAD6956440818F5307889991CBF5B16D9FFFA1278F9",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src-tauri/src/channels.rs",
+      "bytes": 2906,
+      "sha256": "B2F8D42EE004B987F84851811D47D82C6A553F30D030B76CFF014D7F1907D4A9",
+      "acceptedSnapshotSha256": "B2F8D42EE004B987F84851811D47D82C6A553F30D030B76CFF014D7F1907D4A9",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src-tauri/src/duration.rs",
+      "bytes": 6725,
+      "sha256": "9462ED4BA19C998FB785927EFEE6AFCC4DBCCDFFAC3D75C4CAD4BF69AAE7FCCB",
+      "acceptedSnapshotSha256": "9462ED4BA19C998FB785927EFEE6AFCC4DBCCDFFAC3D75C4CAD4BF69AAE7FCCB",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src-tauri/src/hotkey.rs",
+      "bytes": 7250,
+      "sha256": "4673BDA321AC61E4CB6CF545C565DA3ACB6B4DA3BD28A25444C1323419D81859",
+      "acceptedSnapshotSha256": "4673BDA321AC61E4CB6CF545C565DA3ACB6B4DA3BD28A25444C1323419D81859",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src-tauri/src/input.rs",
+      "bytes": 39987,
+      "sha256": "9653AD5991D720839BF50CFA3C9F3C7F2B93F6840A89032C860013B1476EB161",
+      "acceptedSnapshotSha256": "9653AD5991D720839BF50CFA3C9F3C7F2B93F6840A89032C860013B1476EB161",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src-tauri/src/input_native.rs",
+      "bytes": 5403,
+      "sha256": "1D60AA4E36A0C1436AA17B506A4A7F9B517CF78B2546BF68E381E18BED85991E",
+      "acceptedSnapshotSha256": "1D60AA4E36A0C1436AA17B506A4A7F9B517CF78B2546BF68E381E18BED85991E",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src-tauri/src/input_runtime.rs",
+      "bytes": 5000,
+      "sha256": "7FF70C3473FA1AE9D6BA242928EA4512C1A002427BE45DCE73E3EA884636934B",
+      "acceptedSnapshotSha256": "7FF70C3473FA1AE9D6BA242928EA4512C1A002427BE45DCE73E3EA884636934B",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src-tauri/src/ipc.rs",
+      "bytes": 8802,
+      "sha256": "A3E0CD49B4102C1D5778C43BE3047393072BEC52AAFD50BFCA4A177A2A63C96B",
+      "acceptedSnapshotSha256": "A3E0CD49B4102C1D5778C43BE3047393072BEC52AAFD50BFCA4A177A2A63C96B",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src-tauri/src/ipc_native.rs",
+      "bytes": 20140,
+      "sha256": "D07B149A0FD90C85C678E0795B8FC003E9341C4D5682C1A1C7A94B1BD2AB4C99",
+      "acceptedSnapshotSha256": "D07B149A0FD90C85C678E0795B8FC003E9341C4D5682C1A1C7A94B1BD2AB4C99",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src-tauri/src/ipc_runtime.rs",
+      "bytes": 68165,
+      "sha256": "EC6DA3FA124F463CCD3BED1B3E979E734EF0A828C1AF45DBA92CD4A6E6BBFCC8",
+      "acceptedSnapshotSha256": "EC6DA3FA124F463CCD3BED1B3E979E734EF0A828C1AF45DBA92CD4A6E6BBFCC8",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src-tauri/src/ipc_storage.rs",
+      "bytes": 2977,
+      "sha256": "A400D14E4668C906FD665B0EA7F0525D9175168BD8DE7481ACE07198ED4F666C",
+      "acceptedSnapshotSha256": "A400D14E4668C906FD665B0EA7F0525D9175168BD8DE7481ACE07198ED4F666C",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src-tauri/src/ipc_worker.rs",
+      "bytes": 16236,
+      "sha256": "17D25465E00E892CB3E49F95721645EA6F001C964A482A006FDC7F2E4FCF5550",
+      "acceptedSnapshotSha256": "17D25465E00E892CB3E49F95721645EA6F001C964A482A006FDC7F2E4FCF5550",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src-tauri/src/lib.rs",
+      "bytes": 38793,
+      "sha256": "30FF1BBBDCF1A26F6DC16B9B294EB455D975724231A2BC935375CFC1D8D055A6",
+      "acceptedSnapshotSha256": "30FF1BBBDCF1A26F6DC16B9B294EB455D975724231A2BC935375CFC1D8D055A6",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src-tauri/src/main.rs",
+      "bytes": 109,
+      "sha256": "FE29A034AFAD4FA22175D62F0D4AE0A4F4D93B5D425E7AABDF8AEC80BAD50133",
+      "acceptedSnapshotSha256": "FE29A034AFAD4FA22175D62F0D4AE0A4F4D93B5D425E7AABDF8AEC80BAD50133",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src-tauri/src/overlay.rs",
+      "bytes": 12623,
+      "sha256": "47C50E18430B85D347F85D6FF0EAAAABECEFFE02AB08497400181A34B60372E1",
+      "acceptedSnapshotSha256": "47C50E18430B85D347F85D6FF0EAAAABECEFFE02AB08497400181A34B60372E1",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src-tauri/src/overlay_native.rs",
+      "bytes": 11648,
+      "sha256": "453DF648BE4919CC7E927C8CA9AC49870F68E2AC1E341690FC10BF7F79283BA1",
+      "acceptedSnapshotSha256": "453DF648BE4919CC7E927C8CA9AC49870F68E2AC1E341690FC10BF7F79283BA1",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src-tauri/src/overlay_runtime.rs",
+      "bytes": 5029,
+      "sha256": "69C92346A32A14BE329FDBDD4E756F9078990FFC50FBB09CE8232F4452830F5D",
+      "acceptedSnapshotSha256": "69C92346A32A14BE329FDBDD4E756F9078990FFC50FBB09CE8232F4452830F5D",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src-tauri/src/perf_native.rs",
+      "bytes": 3429,
+      "sha256": "5C945FB8B44D10C92E48F6DBCE23DFEBDC1CA9C88F558629700B02E936C598C3",
+      "acceptedSnapshotSha256": "5C945FB8B44D10C92E48F6DBCE23DFEBDC1CA9C88F558629700B02E936C598C3",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src-tauri/src/perf_states.rs",
+      "bytes": 9425,
+      "sha256": "C3947FA4D4C663DBA62252424B05CD2CD3B5CF955E264B3E415574E49F038F56",
+      "acceptedSnapshotSha256": "C3947FA4D4C663DBA62252424B05CD2CD3B5CF955E264B3E415574E49F038F56",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src-tauri/src/perf_webview.rs",
+      "bytes": 21855,
+      "sha256": "B394BCE81422E2A82CCFFC73722048660C3F28032647AE9298FBC39A5162DCB8",
+      "acceptedSnapshotSha256": "B394BCE81422E2A82CCFFC73722048660C3F28032647AE9298FBC39A5162DCB8",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src-tauri/src/performance.rs",
+      "bytes": 60099,
+      "sha256": "2A0EBBCF705028BBBE103A744CDE9D8AB671F01D22C7AD64EAD888EE100F83CF",
+      "acceptedSnapshotSha256": "2A0EBBCF705028BBBE103A744CDE9D8AB671F01D22C7AD64EAD888EE100F83CF",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src-tauri/src/repeat.rs",
+      "bytes": 4844,
+      "sha256": "7636A94A28C4D7C531F3B58E8F0FC2AF54ED35A85EE735C690963A3C3A6CA114",
+      "acceptedSnapshotSha256": "7636A94A28C4D7C531F3B58E8F0FC2AF54ED35A85EE735C690963A3C3A6CA114",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src-tauri/src/routing.rs",
+      "bytes": 12016,
+      "sha256": "44E4FE70872AFCFC28237AEF010172F5CD0B68AF5BC0880891852F024D5B155A",
+      "acceptedSnapshotSha256": "44E4FE70872AFCFC28237AEF010172F5CD0B68AF5BC0880891852F024D5B155A",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src-tauri/src/routing_native.rs",
+      "bytes": 5210,
+      "sha256": "9E11CC3CB613845C63F6C51CB5A6732E0F973AF8E9695680380B9762B9421F40",
+      "acceptedSnapshotSha256": "9E11CC3CB613845C63F6C51CB5A6732E0F973AF8E9695680380B9762B9421F40",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src-tauri/src/settings.rs",
+      "bytes": 5952,
+      "sha256": "1B4A8A1C8ABAFD9FC57B4E4B88C09E50D5658BA4C3E84A58FB84B5CA483208B2",
+      "acceptedSnapshotSha256": "1B4A8A1C8ABAFD9FC57B4E4B88C09E50D5658BA4C3E84A58FB84B5CA483208B2",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src-tauri/src/targets.rs",
+      "bytes": 18689,
+      "sha256": "69A7E5B84F1EB841F4339A2A6A2CD0F80179363D351CD447E6B98069E7FB4E60",
+      "acceptedSnapshotSha256": "69A7E5B84F1EB841F4339A2A6A2CD0F80179363D351CD447E6B98069E7FB4E60",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src-tauri/src/window_policy.rs",
+      "bytes": 3001,
+      "sha256": "3C4D62270FA3555E46B04289D7BE47A478CB76035B8C9B0D34A05BC0CE1212AD",
+      "acceptedSnapshotSha256": "3C4D62270FA3555E46B04289D7BE47A478CB76035B8C9B0D34A05BC0CE1212AD",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src-tauri/src/windows_query.rs",
+      "bytes": 11386,
+      "sha256": "6C2B69AFFD5AC82D62F2A5F27F87925A83FB8F9E7475D020B3B953FB1941896E",
+      "acceptedSnapshotSha256": "6C2B69AFFD5AC82D62F2A5F27F87925A83FB8F9E7475D020B3B953FB1941896E",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src-tauri/tauri.conf.json",
+      "bytes": 669,
+      "sha256": "8CBA6B6D011462C6DE7F4572DB5BC7BB9C2A978450AF3E9F6D14B053548EC76C",
+      "acceptedSnapshotSha256": "8CBA6B6D011462C6DE7F4572DB5BC7BB9C2A978450AF3E9F6D14B053548EC76C",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src/App.vue",
+      "bytes": 39438,
+      "sha256": "33D34CC28E7494DFDB815BAA02EAA1264FFBCFFC36476A0E5CFABE4222A58643",
+      "acceptedSnapshotSha256": "33D34CC28E7494DFDB815BAA02EAA1264FFBCFFC36476A0E5CFABE4222A58643",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src/NavIcon.vue",
+      "bytes": 1239,
+      "sha256": "56BBCCE148B620D41CEDB56033FC10F93A95FD93980D53A18436ADC9B4341314",
+      "acceptedSnapshotSha256": "56BBCCE148B620D41CEDB56033FC10F93A95FD93980D53A18436ADC9B4341314",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src/README.md",
+      "bytes": 3797,
+      "sha256": "DA87C45FF4DF5BBC2E7448DE0A7D6662DB13C064875E9BDE7F18A735D1422282",
+      "acceptedSnapshotSha256": "DA87C45FF4DF5BBC2E7448DE0A7D6662DB13C064875E9BDE7F18A735D1422282",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src/assets/app-icon.png",
+      "bytes": 1104,
+      "sha256": "AC160094426F536177AD7101CCBFF0EDE9FC5B1EE2A9684DCD88611F70756EB9",
+      "acceptedSnapshotSha256": "AC160094426F536177AD7101CCBFF0EDE9FC5B1EE2A9684DCD88611F70756EB9",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src/execution-time.ts",
+      "bytes": 1579,
+      "sha256": "504052D6933D9536EA56212A2A60C0B874A65AF313319D0EBC24840091BE1C77",
+      "acceptedSnapshotSha256": "504052D6933D9536EA56212A2A60C0B874A65AF313319D0EBC24840091BE1C77",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src/input-channel.ts",
+      "bytes": 998,
+      "sha256": "1F54A8B332E5B9928440D2EA2969721DD4FED24C95A52AC7C9A1909EA4A9DE86",
+      "acceptedSnapshotSha256": "1F54A8B332E5B9928440D2EA2969721DD4FED24C95A52AC7C9A1909EA4A9DE86",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src/main.ts",
+      "bytes": 115,
+      "sha256": "5D2F4C0F5D289C2624F3569AEA0B5A48E48CB0D22EF5F57A5BA47D64A0EC7969",
+      "acceptedSnapshotSha256": "5D2F4C0F5D289C2624F3569AEA0B5A48E48CB0D22EF5F57A5BA47D64A0EC7969",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src/overlay-position.ts",
+      "bytes": 470,
+      "sha256": "D8D4285A82A15564267171B43E1CE6ACE9F457AB3602E5087783155C05FBDACC",
+      "acceptedSnapshotSha256": "D8D4285A82A15564267171B43E1CE6ACE9F457AB3602E5087783155C05FBDACC",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src/receiver-routing.ts",
+      "bytes": 906,
+      "sha256": "485BF80EC682F616893747AF0A2F29B37F5347C521A71C42953B3FC50E222091",
+      "acceptedSnapshotSha256": "485BF80EC682F616893747AF0A2F29B37F5347C521A71C42953B3FC50E222091",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src/single-input.ts",
+      "bytes": 4530,
+      "sha256": "F1767B67AA859734E5EC791411FA0D1696948027459568AF7756DC4438678876",
+      "acceptedSnapshotSha256": "F1767B67AA859734E5EC791411FA0D1696948027459568AF7756DC4438678876",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src/style.css",
+      "bytes": 13838,
+      "sha256": "81DCA1670D552BEC9ED10BD49B8C177832BB24940334B78DB2FD806591DB8BA8",
+      "acceptedSnapshotSha256": "81DCA1670D552BEC9ED10BD49B8C177832BB24940334B78DB2FD806591DB8BA8",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src/target-filter.ts",
+      "bytes": 827,
+      "sha256": "FFD05C82BC2FCEB098F62444B0426AD922B2699DDF8B894B325E39BD1C0C7FC0",
+      "acceptedSnapshotSha256": "FFD05C82BC2FCEB098F62444B0426AD922B2699DDF8B894B325E39BD1C0C7FC0",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "src/vite-env.d.ts",
+      "bytes": 38,
+      "sha256": "65996936FBB042915F7B74A200FCDDE7E410F32A669B1AB9597CFAA4B0FADDB5",
+      "acceptedSnapshotSha256": "65996936FBB042915F7B74A200FCDDE7E410F32A669B1AB9597CFAA4B0FADDB5",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "tsconfig.json",
+      "bytes": 344,
+      "sha256": "8CC48AEE06E29846DEF31F11A8933DA7A2F22732B2B4125286B187B3560C9FBD",
+      "acceptedSnapshotSha256": "8CC48AEE06E29846DEF31F11A8933DA7A2F22732B2B4125286B187B3560C9FBD",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "version/CHANGELOG.md",
+      "bytes": 5208,
+      "sha256": "F47C9A64EED3835873217AA6E151579C02FFB395E569F1DABCD60C7190EAB07C",
+      "acceptedSnapshotSha256": "F47C9A64EED3835873217AA6E151579C02FFB395E569F1DABCD60C7190EAB07C",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "version/README.md",
+      "bytes": 2362,
+      "sha256": "76E5D7B476EBE017666C8C2D5C1F8D01BD26ACBCB781D93F7BC92A68C22DBA9A",
+      "acceptedSnapshotSha256": "B6864B490DA0432FC91F5268A6FE42A4B12CA9E1A9471CF2F308B328F20864D1",
+      "changedSinceAcceptedSnapshot": true
+    },
+    {
+      "path": "version/VERSION",
+      "bytes": 11,
+      "sha256": "B3F44280C2EF0E32FB4E8D1279E1AB98E557846D27AFC80F1113540D692DD4E6",
+      "acceptedSnapshotSha256": "B3F44280C2EF0E32FB4E8D1279E1AB98E557846D27AFC80F1113540D692DD4E6",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "version/releases.json",
+      "bytes": 43,
+      "sha256": "B448FF69287035C7974E6F78DB1057C83138089D33A63E251865038F2F33F1B7",
+      "acceptedSnapshotSha256": "B448FF69287035C7974E6F78DB1057C83138089D33A63E251865038F2F33F1B7",
+      "changedSinceAcceptedSnapshot": false
+    },
+    {
+      "path": "vite.config.ts",
+      "bytes": 309,
+      "sha256": "E191FD11278A8FB6859FEEA7E065E475A41D72121ED87D0351278080EC4BD52C",
+      "acceptedSnapshotSha256": "E191FD11278A8FB6859FEEA7E065E475A41D72121ED87D0351278080EC4BD52C",
+      "changedSinceAcceptedSnapshot": false
+    }
+  ]
+}
