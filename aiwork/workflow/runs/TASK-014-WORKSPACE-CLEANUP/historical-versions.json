@@ -469,7 +469,7 @@
       "directory": "build/staging/TASK-013-UI-SKETCH-ALIGN",
       "version": "0.1.0-rc.9",
       "published": false,
-      "status": "keep-current-accepted",
+      "status": "removed-after-0.1.0-publication",
       "artifacts": [
         {
           "path": "build/staging/TASK-013-UI-SKETCH-ALIGN/ClickMaster-0.1.0-rc.9-windows-x64.zip",
@@ -520,7 +520,9 @@
         "release": false
       },
       "humanAcceptanceSummary": "用户确认 TASK-013 人工 UI 验收通过",
-      "humanAcceptanceSource": "aiwork/workflow/runs/TASK-013-UI-SKETCH-ALIGN/human-acceptance.md"
+      "humanAcceptanceSource": "aiwork/workflow/runs/TASK-013-UI-SKETCH-ALIGN/human-acceptance.md",
+      "retiredAt": "2026-10-23T08:22:37.6686793Z",
+      "retirementReceipt": "aiwork/workflow/runs/TASK-015-RELEASE-PREP/rc9-retirement.json"
     }
   ],
   "removalExecutedAt": "2026-10-23T07:23:17.5013532Z",

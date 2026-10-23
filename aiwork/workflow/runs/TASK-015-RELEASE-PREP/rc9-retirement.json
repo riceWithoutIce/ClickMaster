@@ -1,0 +1,24 @@
+{
+  "version": "0.1.0-rc.9",
+  "supersededBy": "0.1.0",
+  "finishedAt": "2026-10-23T08:22:37.6686793Z",
+  "releaseUrl": "https://github.com/riceWithoutIce/ClickMaster/releases/tag/v0.1.0",
+  "files": [
+    {
+      "path": "build/staging/TASK-013-UI-SKETCH-ALIGN/ClickMaster-0.1.0-rc.9-windows-x64.zip",
+      "bytes": 3091209,
+      "sha256": "A4BBB6FA2C9D5072D066477EDB0CF1BF1BA027C6EDA3E9E226F79A418422DD27",
+      "outcome": "deleted",
+      "reason": "recorded-rc9-artifact-superseded-by-verified-0.1.0"
+    },
+    {
+      "path": "build/staging/TASK-013-UI-SKETCH-ALIGN/ClickMaster.exe",
+      "bytes": 9774592,
+      "sha256": "1E0D28BBC669F1E0A4E92CB5DA594D79B4179C83DE841550E84A750B85B31F1E",
+      "outcome": "deleted",
+      "reason": "recorded-rc9-artifact-superseded-by-verified-0.1.0"
+    }
+  ],
+  "userDataPreserved": true,
+  "processesTerminated": false
+}

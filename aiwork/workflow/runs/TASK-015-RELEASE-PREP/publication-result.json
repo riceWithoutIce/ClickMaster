@@ -1,0 +1,52 @@
+{
+  "version": "0.1.0",
+  "status": "published",
+  "sourceCommit": "d14a214d149bd380295b8ea6be7c404ef5c294a8",
+  "tag": "v0.1.0",
+  "annotatedTag": true,
+  "githubRelease": "https://github.com/riceWithoutIce/ClickMaster/releases/tag/v0.1.0",
+  "publishedAt": "2026-10-23T08:21:34Z",
+  "draft": false,
+  "prerelease": false,
+  "artifact": {
+    "filename": "ClickMaster-0.1.0-windows-x64.zip",
+    "path": "release/current/ClickMaster-0.1.0-windows-x64.zip",
+    "bytes": 3224535,
+    "sha256": "ACEE1AE8045055D01DECE59F56FE7D238FA7A3DDEB9F2C6B2C9447EF008630DD"
+  },
+  "assets": [
+    {
+      "name": "ClickMaster-0.1.0-windows-x64.zip",
+      "bytes": 3224535,
+      "sha256": "ACEE1AE8045055D01DECE59F56FE7D238FA7A3DDEB9F2C6B2C9447EF008630DD",
+      "url": "https://github.com/riceWithoutIce/ClickMaster/releases/download/v0.1.0/ClickMaster-0.1.0-windows-x64.zip"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "bytes": 182,
+      "sha256": "4E0A3EBAC6A0D138357D8C57C4E3A6B2AD1A57ACDDAE83AF7F4B49738005DC02",
+      "url": "https://github.com/riceWithoutIce/ClickMaster/releases/download/v0.1.0/SHA256SUMS.txt"
+    },
+    {
+      "name": "source.json",
+      "bytes": 16658,
+      "sha256": "B5DD1CB2896EBE7DEAB1A2044E12CD5A61FED202F9C8B51B88618CFA42520870",
+      "url": "https://github.com/riceWithoutIce/ClickMaster/releases/download/v0.1.0/source.json"
+    }
+  ],
+  "humanAcceptance": "PASS-user-confirmed",
+  "humanAcceptanceRecord": "aiwork/workflow/runs/TASK-015-RELEASE-PREP/human-acceptance.md",
+  "acceptedZipUnchanged": true,
+  "remoteAssetHashVerification": "PASS-GitHub-SHA256-digests",
+  "sourceAndTagMatch": true,
+  "rc9Retirement": "aiwork/workflow/runs/TASK-015-RELEASE-PREP/rc9-retirement.json",
+  "rc9DeletedFiles": 2,
+  "rc9DeletedBytes": 12865801,
+  "userDataPreserved": true,
+  "processesTerminated": false,
+  "windows11": "NOT RUN",
+  "missingOrOldRuntime": "NOT RUN",
+  "longTermPerformance": "NOT RUN",
+  "independentVerifier": "NOT RUN-coordinator-checks-only",
+  "followupRecordCommit": "Recorded separately after source tag; no tag rewrite"
+}

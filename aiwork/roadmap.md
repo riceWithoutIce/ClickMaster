@@ -6,7 +6,7 @@
 
 TASK-015 已获用户“开始执行”“继续”授权，`0.1.0` 待发布验收包已生成。rc.9 已推送至 `e094ca8`；当前版本元数据已同步，类型/helper、桌面构建、包内容与主协调者检查通过。后端原始测试入口遇到 0xc0000139；沿既有方法仅给隔离测试副本嵌入 Common Controls v6 清单后，100 通过、0 失败、2 子进程入口按设计忽略。生产源码及 EXE 未因该测试处理修改。
 
-用户已反馈“验收通过”并明确“开始正式发布”，对应指纹见本任务 `human-acceptance.md`。已验收 ZIP 原样转入 `release/current/`，发布提交、标签及 GitHub Release 正按 `publication-plan.md` 执行；远端状态与旧版本淘汰以发布回执为准。下方为历史阶段记录，以本节与 TASK-015 当前回执为准。
+用户已反馈“验收通过”并明确“开始正式发布”，`0.1.0` 已正式公开：[GitHub Release](https://github.com/riceWithoutIce/ClickMaster/releases/tag/v0.1.0)。已验收 ZIP 原样保留在 `release/current/`，注释标签 `v0.1.0` 指向 `d14a214`，三项远端资产大小与 SHA-256 通过核对。rc.9 的旧 EXE/ZIP 已淘汰，用户 data 与活动的 0.1.0 保留。详见 TASK-015/publication-report.md。下方为历史阶段记录，以本节与当前发布回执为准。
 
 ## 历史阶段进展
 

@@ -64,3 +64,10 @@
 - `build/staging/TASK-015-RELEASE-PREP/` 已生成待发布验收 ZIP、校验与来源记录，详见 `preparation-report.md`。
 - AC-01/02/03/05 的准备与检查已完成；用户随后确认“验收通过”，AC-04 记人工总体通过，包指纹不变。AC-06 正式提交/标签/Release 尚未执行，当前无正式发布条目。
 - 用户在人工验收后明确“开始正式发布”，授权按 `publication-plan.md` 执行正式晋级、提交/推送、标签、GitHub Release 和成功核对后的旧产物淘汰；不重复请求这些操作的授权。
+
+## 正式发布结果
+
+- `v0.1.0` 注释标签已推送，固定指向发布源码提交 `d14a214d149bd380295b8ea6be7c404ef5c294a8`。
+- GitHub Release 已公开，三项资产大小和 SHA-256 与本地匹配；详情见 `publication-report.md` 与 `publication-result.json`。
+- 已验收 ZIP 原样保留在 `release/current/`；rc.9 的 EXE/ZIP 已核验后淘汰，活动的 0.1.0 与所有用户 data 保留。
+- AC-06 已完成；构建/检查、人工验收和正式发布结果分别记录，延期项不扩成当前修复任务。

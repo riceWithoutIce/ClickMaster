@@ -51,10 +51,33 @@
         "status": "current"
       },
       "publication": {
-        "state": "local-promoted-remote-pending",
+        "state": "published",
         "tag": "v0.1.0",
-        "intendedUrl": "https://github.com/riceWithoutIce/ClickMaster/releases/tag/v0.1.0"
-      }
+        "url": "https://github.com/riceWithoutIce/ClickMaster/releases/tag/v0.1.0",
+        "publishedAt": "2026-10-23T08:21:34Z",
+        "assetsVerified": "size-and-GitHub-SHA256-digest",
+        "assets": [
+          {
+            "name": "ClickMaster-0.1.0-windows-x64.zip",
+            "bytes": 3224535,
+            "sha256": "ACEE1AE8045055D01DECE59F56FE7D238FA7A3DDEB9F2C6B2C9447EF008630DD",
+            "url": "https://github.com/riceWithoutIce/ClickMaster/releases/download/v0.1.0/ClickMaster-0.1.0-windows-x64.zip"
+          },
+          {
+            "name": "SHA256SUMS.txt",
+            "bytes": 182,
+            "sha256": "4E0A3EBAC6A0D138357D8C57C4E3A6B2AD1A57ACDDAE83AF7F4B49738005DC02",
+            "url": "https://github.com/riceWithoutIce/ClickMaster/releases/download/v0.1.0/SHA256SUMS.txt"
+          },
+          {
+            "name": "source.json",
+            "bytes": 16658,
+            "sha256": "B5DD1CB2896EBE7DEAB1A2044E12CD5A61FED202F9C8B51B88618CFA42520870",
+            "url": "https://github.com/riceWithoutIce/ClickMaster/releases/download/v0.1.0/source.json"
+          }
+        ]
+      },
+      "sourceCommit": "d14a214d149bd380295b8ea6be7c404ef5c294a8"
     }
   ]
 }
