@@ -1,0 +1,28 @@
+{
+  "version": "0.1.0",
+  "status": "local-promoted-remote-pending",
+  "artifact": {
+    "filename": "ClickMaster-0.1.0-windows-x64.zip",
+    "path": "release/current/ClickMaster-0.1.0-windows-x64.zip",
+    "bytes": 3224535,
+    "sha256": "ACEE1AE8045055D01DECE59F56FE7D238FA7A3DDEB9F2C6B2C9447EF008630DD"
+  },
+  "buildManifest": "version/manifests/0.1.0-build.json",
+  "buildManifestSha256": "1212AA5622879A2350CECA2F10EB3360468830C88621780EFBCCE5E22858A10C",
+  "postBuildDocumentationChanges": [
+    "docs/LIMITATIONS.md",
+    "docs/USAGE.md",
+    "README.md",
+    "release/current/README.md",
+    "release/preview/README.md",
+    "release/README.md",
+    "version/CHANGELOG.md",
+    "version/README.md"
+  ],
+  "acceptedZipUnchanged": true,
+  "stagingZipRemoved": true,
+  "currentRuntimePreserved": true,
+  "commit": false,
+  "tag": false,
+  "githubRelease": false
+}

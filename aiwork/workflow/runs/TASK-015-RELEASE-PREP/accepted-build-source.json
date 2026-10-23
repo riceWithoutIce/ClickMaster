@@ -1,0 +1,44 @@
+{
+  "id": "TASK-015-RELEASE-PREP-0.1.0-human-candidate",
+  "version": "0.1.0",
+  "baseCommit": "e094ca897743ffd08ada44a5d61b722a13c5aeac",
+  "dirtySnapshot": true,
+  "sourceFileCount": 84,
+  "sourceManifest": "version/manifests/0.1.0-build.json",
+  "sourceManifestSha256": "1212AA5622879A2350CECA2F10EB3360468830C88621780EFBCCE5E22858A10C",
+  "sourceTextHashMode": "working-tree-bytes-before-Git-EOL-normalization",
+  "executable": {
+    "path": "build/cargo/release/clickmaster.exe",
+    "packageEntry": "ClickMaster.exe",
+    "bytes": 9774592,
+    "sha256": "9F263B8AC713DDDEF93C929DA38A6804077BAD0FAD82FD21B012894EE0A5DE88"
+  },
+  "zip": {
+    "path": "build/staging/TASK-015-RELEASE-PREP/ClickMaster-0.1.0-windows-x64.zip",
+    "bytes": 3224535,
+    "sha256": "ACEE1AE8045055D01DECE59F56FE7D238FA7A3DDEB9F2C6B2C9447EF008630DD"
+  },
+  "signature": "NotSigned",
+  "testedBuildHost": {
+    "os": "Windows 10 22H2",
+    "build": "19045",
+    "architecture": "x64"
+  },
+  "checks": {
+    "version": "PASS",
+    "typecheck": "PASS",
+    "uiHelpers": "PASS",
+    "desktopBuild": "PASS",
+    "peIcon": "PASS",
+    "packageContent": "PASS",
+    "rawBackendEntry": "FAILED-TO-START-0xc0000139",
+    "isolatedBackendWithCommonControlsManifest": "100-passed-0-failed-2-ignored"
+  },
+  "humanAcceptance": "NOT RUN",
+  "windows11": "NOT RUN",
+  "missingOrOldRuntime": "NOT RUN",
+  "independentVerifier": "NOT RUN-coordinator-checks-only",
+  "release": false,
+  "originalSourceManifest": "build/verification/TASK-015-RELEASE-PREP/coordinator/source-manifest.json",
+  "originalSourceManifestSha256": "DFD55E9D85BDCE286C3D5844FE0027ED23291EB93F26F442ED22DE1B3C4C483B"
+}

@@ -1,4 +1,60 @@
 {
   "schemaVersion": 1,
-  "releases": []
+  "releases": [
+    {
+      "version": "0.1.0",
+      "channel": "stable",
+      "date": "2026-10-23",
+      "architecture": "x64",
+      "format": "portable-zip",
+      "sourceRef": "refs/tags/v0.1.0",
+      "buildBaseCommit": "e094ca897743ffd08ada44a5d61b722a13c5aeac",
+      "buildDirtySnapshot": true,
+      "buildManifest": "version/manifests/0.1.0-build.json",
+      "buildManifestSha256": "1212AA5622879A2350CECA2F10EB3360468830C88621780EFBCCE5E22858A10C",
+      "buildFileHashMode": "working-tree-bytes-before-Git-EOL-normalization",
+      "postBuildDocumentationChanges": [
+        "docs/LIMITATIONS.md",
+        "docs/USAGE.md",
+        "README.md",
+        "release/current/README.md",
+        "release/preview/README.md",
+        "release/README.md",
+        "version/CHANGELOG.md",
+        "version/README.md"
+      ],
+      "artifact": {
+        "filename": "ClickMaster-0.1.0-windows-x64.zip",
+        "path": "release/current/ClickMaster-0.1.0-windows-x64.zip",
+        "bytes": 3224535,
+        "sha256": "ACEE1AE8045055D01DECE59F56FE7D238FA7A3DDEB9F2C6B2C9447EF008630DD"
+      },
+      "executable": {
+        "packageEntry": "ClickMaster.exe",
+        "bytes": 9774592,
+        "sha256": "9F263B8AC713DDDEF93C929DA38A6804077BAD0FAD82FD21B012894EE0A5DE88"
+      },
+      "runtime": "Compatible shared Microsoft Evergreen WebView2 required; not bundled",
+      "signature": "NotSigned",
+      "acceptance": {
+        "human": "PASS-user-confirmed",
+        "record": "aiwork/workflow/runs/TASK-015-RELEASE-PREP/human-acceptance.md",
+        "preparation": "aiwork/workflow/runs/TASK-015-RELEASE-PREP/preparation-report.md",
+        "backend": "100 passed / 0 failed / 2 ignored in isolated test copy with Common Controls v6 manifest",
+        "rawBackendEntry": "FAILED-TO-START-0xc0000139",
+        "independentVerifier": "NOT RUN",
+        "windows11": "NOT RUN",
+        "missingOrOldRuntime": "NOT RUN",
+        "longTermPerformance": "NOT RUN"
+      },
+      "retention": {
+        "status": "current"
+      },
+      "publication": {
+        "state": "local-promoted-remote-pending",
+        "tag": "v0.1.0",
+        "intendedUrl": "https://github.com/riceWithoutIce/ClickMaster/releases/tag/v0.1.0"
+      }
+    }
+  ]
 }

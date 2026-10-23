@@ -1,6 +1,6 @@
-# ClickMaster 0.1.0-rc.9 使用说明
+# ClickMaster 0.1.0 使用说明
 
-本版是本地候选，尚未正式发布；本轮界面及限时功能仍需体验反馈。
+`0.1.0` 为首个正式版，已通过用户人工回归。采用 Windows x64 免安装 ZIP 分发，解压到可写目录后运行 `ClickMaster.exe`；发布资产和校验值以 [正式 Release](https://github.com/riceWithoutIce/ClickMaster/releases/tag/v0.1.0) 为准。
 
 1. 将 ZIP 完整解压到可写目录，运行 ClickMaster.exe。需要已有兼容的 Microsoft Evergreen WebView2 Runtime；本工具不自动下载、安装或提权。
 2. 在“目标窗口”刷新并筛选 EXE、标题或 PID，必要时勾选“显示后台窗口”。选择并绑定具体实例；接收路由有歧义时在“窗口详情”确认。无窗口进程不能绑定，目标重启后重新绑定。

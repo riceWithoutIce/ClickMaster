@@ -10,7 +10,7 @@
 
 ## 版本号
 
-采用SemVer，当前 `0.1.0-rc.6` 是本地候选，尚未发布。`VERSION` 为唯一人工编辑版本源；`node scripts/version.mjs --sync` 同步package、Cargo、锁文件自有包和Tauri字段，`--check`验证，不升级依赖。
+采用SemVer，当前 `0.1.0` 为首个正式版。`VERSION` 为唯一人工编辑版本源；`node scripts/version.mjs --sync` 同步package、Cargo、锁文件自有包和Tauri字段，`--check`验证，不升级依赖。
 
 Tauri构建将完整SemVer写入PE FileVersion/ProductVersion字符串，数值版本采用Tauri自有转换规则，候选包须核对实际资源；数值字段不能独立表达rc身份。未发布索引保持空，候选来源清单位于任务暂存目录。
 
@@ -18,7 +18,7 @@ Tauri构建将完整SemVer写入PE FileVersion/ProductVersion字符串，数值�
 
 ## 发布索引
 
-`releases.json` 初始为空索引。实际发布才新增条目，至少记录：
+`releases.json` 在正式包验收并发布时新增条目，至少记录：
 
 - 版本、发布渠道（stable/preview）、日期、架构及分发格式。
 - 可归属的源码提交；尚无 Git 时不得伪造提交号或宣称可按标签恢复。
